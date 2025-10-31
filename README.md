@@ -222,18 +222,6 @@ Authorization: Bearer <token>
 
 ---
 
-## Deliverables Checklist (for submission)
-
-1. **GitHub repository link** — Ensure the repo is public (or provide reviewer access).  
-2. **README.md** — This file (include overview, setup steps, API summary, example requests).  
-3. **Assumptions & Challenges** — Document any important assumptions (e.g., using email as username, swap atomicity) and challenges faced (e.g., handling concurrent swap requests).  
-4. **Optional extras (recommended)**:
-   - Unit / Integration tests (backend swap logic is a great candidate).
-   - Real-time notifications via WebSockets.
-   - Additional CI / E2E tests (Playwright).
-   - Dockerized local setup and `docker-compose.yml` included.
-
----
 
 ## How to run locally (quick start)
 
@@ -270,5 +258,3 @@ docker-compose up -d
 
 ---
 
-## Contact & Support
-If you need help running the project or want the README adjusted for a particular evaluator format, tell me what to include (e.g., Postman collection link, test credentials, environment variable names) and I’ll update the document.

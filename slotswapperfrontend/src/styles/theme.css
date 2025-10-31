@@ -1,0 +1,133 @@
+:root {
+  /* Professional brand colors - Corporate palette */
+  --primary: #2563eb; /* Professional blue */
+  --primary-rgb: 37,99,235;
+  --secondary: #0891b2; /* Corporate teal */
+  --secondary-rgb: 8,145,178;
+  --accent: #f59e0b; /* Professional amber */
+  --bg: #ffffff;
+  --bg-subtle: #f8fafc;
+  --muted: #64748b;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --text-muted: #64748b;
+}
+
+/* Professional header */
+.bg-app-hero {
+  background: linear-gradient(180deg, #1e40af 0%, #2563eb 100%);
+  color: white;
+}
+
+/* Minimal card styles */
+.glass-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Professional buttons */
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.15);
+}
+
+.btn-secondary {
+  background: #10b981;
+  color: white;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #059669;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.15);
+}
+
+/* Subtle card styles */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.card-hover:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-premium {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Professional badge styles */
+.badge-primary {
+  background-color: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #93c5fd;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+}
+
+.badge-success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+}
+
+.badge-warning {
+  background-color: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+}
+
+.badge-danger {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+}
+
+/* Utility classes */
+.bg-primary { background-color: var(--primary); color: #fff }
+.text-primary { color: var(--primary) }
+.text-muted { color: var(--muted) }
+.nav-active { 
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-bottom: 2px solid white;
+}
+
+/* Professional input styles */
+.input-premium {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  transition: all 0.2s ease;
+}
+
+.input-premium:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  outline: none;
+}

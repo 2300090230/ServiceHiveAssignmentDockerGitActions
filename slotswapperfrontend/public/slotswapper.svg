@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#4F46E5"/>
+  <g transform="translate(8,8)">
+    <!-- S shape left -->
+    <path d="M10 6C6 6 4 9 4 12C4 15 6 18 10 18C14 18 16 15 16 12" stroke="#F8FAFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- S shape right mirrored -->
+    <path d="M26 24C30 24 32 21 32 18C32 15 30 12 26 12C22 12 20 15 20 18" stroke="#C7D2FE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- connecting diagonal to suggest swap -->
+    <path d="M8 20L24 4" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+version: "3.8"
+
+services:
+  backend:
+    image: 2300090230/slotswapperbackend:latest
+    container_name: springboot
+    ports:
+      - "2025:2420"
+    environment:
+      # MongoDB Atlas connection string (securely provided to container)
+      SPRING_DATA_MONGODB_URI: mongodb+srv://root:root@laxman.xmhzqpt.mongodb.net/SlotSwapper?retryWrites=true&w=majority&appName=laxman
+
+      # Optional: Override application name and port if needed
+      SPRING_APPLICATION_NAME: SlotSwapperBackend
+      SERVER_PORT: 2420
+
+      # Optional logging overrides
+      LOGGING_LEVEL_COM_SERVICEHIVE_SLOTSWAPPER: DEBUG
+      LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_DATA_MONGODB: DEBUG
+
+    restart: on-failure
+    networks:
+      - springboot-mongo-net
+
+  frontend:
+    image: 2300090230/slotswapperfrontend:latest
+    container_name: react
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: on-failure
+    networks:
+      - springboot-mongo-net
+
+networks:
+  springboot-mongo-net:
